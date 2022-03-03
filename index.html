@@ -27,6 +27,9 @@
 		.popup-content {
 		visibility:hidden;
 		}
+		.popup-content2 {
+		visibility:hidden;
+		}
 		</style>
   		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -49,7 +52,32 @@
 				</div>
 				<div class="image phone"><div class="inner"><img src="/htdocs/img/screen.gif" alt="" /></div></div>
 			</header>
-
+			  <foot1>
+    				Welcome, Karibu , Bienvenidos.
+				  
+				  <button id="open">NFT Hub</button>
+				  
+				  
+				  <button id="open2"><img src="http://erinecoin.gif"></button>
+				  				  				  
+				  
+					<div id="popup" class="jqModal">
+					<!-- NFT Hub Dialog-->
+					<div class="content">
+					<span class="exit">&times;</span>
+					<p>Welcome to JQuery Modal Demo Text...</p>
+					</div>
+					</div>
+				  
+				  	<div id="popup2" class="jqModal">
+					<!-- NFT Hub Dialog-->
+					<div class="content1">
+					<span class="exit">&times;</span>
+					<p>Welcome to JQuery Modal Demo Text...</p>
+					</div>
+					</div>
+						
+		</foot1>
 
 		<!-- Two -->
 			<section id="two" class="wrapper">
@@ -156,19 +184,7 @@
 					<li><a href="#" class="button">Learn More</a></li>
 				</ul>
 			</section>
-			  <foot1>
-    				Thank you.
-				  
-				  <button id="modalBtn">NFT Hub</button>
-					<!-- Our Modal Pop Up Box-->
-					<div id="modalDemo" class="jqModal">
-					<!-- Our Content for the Modal Dialog Box-->
-					<div class="content">
-					<span class="exit">&times;</span>
-					<p>Welcome to JQuery Modal Demo Text...</p>
-					</div>
-					</div>
-  			  </foot1>
+
 
 
 
@@ -220,6 +236,13 @@
 
 			$(".close, .popup").on("click", function(){
 			$(".popup, .popup-content").removeClass("active");
+			});
+			$(".open2").on("click", function(){
+			$(".popup2, .popup-content2").addClass("active");
+			});
+
+			$(".close, .popup2").on("click", function(){
+			$(".popup2, .popup-content2").removeClass("active");
 			});
 			</script>
 
