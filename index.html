@@ -21,6 +21,12 @@
  		 height: 60px;
  		 bottom: 0;
 		 }
+		.popup-overlay {
+		visibility:hidden;
+                 }
+		.popup-content {
+		visibility:hidden;
+		}
 		</style>
   		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -207,6 +213,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			$(".open").on("click", function(){
+			$(".popup, .popup-content").addClass("active");
+			});
+
+			$(".close, .popup").on("click", function(){
+			$(".popup, .popup-content").removeClass("active");
+			});
+			</script>
 
 	</body>
 </html>
